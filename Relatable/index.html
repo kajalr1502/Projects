@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reltable - Your Daily Journal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Relatable</h1>
+            <p>Track your mood and thoughts every day</p>
+        </header>
 
+        <main>
+            <section id="journal-entry">
+                <h2>Today's Journal</h2>
+                <textarea id="journal-text" placeholder="How are you feeling today?" rows="6"></textarea>
+                
+                <label for="mood">How are you feeling?</label>
+                <select id="mood">
+                    <option value="happy">😊 Happy</option>
+                    <option value="sad">😢 Sad</option>
+                    <option value="angry">😠 Angry</option>
+                    <option value="anxious">😰 Anxious</option>
+                    <option value="calm">😌 Calm</option>
+                    <option value="excited">🤩 Excited</option>
+                    <option value="tired">🥱 Tired</option>
+                    <option value="lonely">😔 Lonely</option>
+                    <option value="grateful">🙏 Grateful</option>
+                    <option value="overwhelmed">🥵 Overwhelmed</option>
+                    <option value="motivated">💪 Motivated</option>
+                  <option value="bored">😐 Bored</option>
+                </select>
+
+                <button id="save-entry">Save Entry</button>
+            </section>
+
+            <section id="history">
+                <h2>Your Past Entries</h2>
+                <div id="entries-list">
+                    <!-- Journal entries will appear here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
